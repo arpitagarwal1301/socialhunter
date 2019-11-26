@@ -12,7 +12,6 @@ const User = require('../../models/User')
 // @desc REGISTER USER
 // @access Public
 
-router.get('/',(req,res) => res.send('User route'));
 router.post('/',[
 
     //FIELD VALIDATIONS
