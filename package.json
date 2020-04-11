@@ -4,8 +4,11 @@
   "description": "social platform",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev":"nodemon index.js"
+    "startServer": "node index.js",
+    "devServer":"nodemon index.js",
+    "client":"npm start --prefix client",
+    "prod":"concurrently \"npm run startServer\" \"npm run client\"",
+    "dev":"concurrently \"npm run devServer\" \"npm run client\""
   },
   "author": "Arpit Agarwal",
   "license": "ISC",
